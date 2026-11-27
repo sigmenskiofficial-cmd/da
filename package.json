@@ -1,0 +1,32 @@
+{
+  "name": "aniyashi",
+  "version": "5.0.0",
+  "private": true,
+  "type": "module",
+  "description": "aniyashi — Omega Infinity V5 anime streaming platform",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "discover": "node scripts/discover-official-sources.mjs",
+    "test": "node scripts/smoke-test.mjs",
+    "typecheck": "tsc --noEmit -p client/tsconfig.json"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "hls.js": "^1.5.17",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.2",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
