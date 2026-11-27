@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-11-27T15:20:00.000Z",
+  "note": "Every entry below was discovered on the rights holder's own channel and then verified with YouTube's oEmbed endpoint (HTTP 200 = public and embeddable). No identifier in this file is invented. Episodes not listed here are genuinely unavailable through an authorized embed, and aniyashi labels them as such.",
+  "sources": [
+    {
+      "id": "sonic-x-tms",
+      "title": "Sonic X",
+      "aliases": ["Sonic X (2003)", "SONIC X"],
+      "year": 2003,
+      "anilistId": 1816,
+      "malId": 1816,
+      "channel": "Anime! on TMS Official Channel",
+      "channelUrl": "https://www.youtube.com/@AnimeonTMSOfficialChannel",
+      "rightsNote": "Full episode uploaded by TMS Entertainment, the series' rights holder, on its official channel.",
+      "episodes": [
+        {
+          "number": 1,
+          "title": "EP01 Chaos Control Freaks",
+          "videoId": "9CGih4gMRlk",
+          "language": "dub",
+          "durationSeconds": null,
+          "verifiedAt": "2026-11-27T15:18:00.000Z",
+          "publisherTitle": "SONIC X - EP01 Chaos Control Freaks | English Dub | Full Episode"
+        }
+      ]
+    },
+    {
+      "id": "gundam-seed-destiny-gundaminfo",
+      "title": "Mobile Suit Gundam SEED Destiny",
+      "aliases": ["Kidou Senshi Gundam SEED DESTINY", "Mobile Suit Gundam Seed Destiny", "Gundam SEED Destiny"],
+      "year": 2004,
+      "anilistId": 94,
+      "malId": 94,
+      "channel": "GundamInfo",
+      "channelUrl": "https://www.youtube.com/@GundamInfo",
+      "rightsNote": "Full episodes published by Bandai Namco Filmworks on the official Gundam channel. Regional availability is controlled by the publisher.",
+      "episodes": [
+        { "number": 1, "title": "Episode 1", "videoId": "4AbgG1rVFrk", "language": "dub", "durationSeconds": null, "verifiedAt": "2026-11-27T15:17:00.000Z", "publisherTitle": "【EN Dub】Mobile Suit Gundam SEED DESTINY - Episode1" },
+        { "number": 2, "title": "Episode 2", "videoId": "beu95yrJfHI", "language": "dub", "durationSeconds": null, "verifiedAt": "2026-11-27T15:17:00.000Z", "publisherTitle": "【EN Dub】Mobile Suit Gundam SEED DESTINY - Episode2" },
+        { "number": 3, "title": "Episode 3", "videoId": "DMVdbd_YsVM", "language": "dub", "durationSeconds": null, "verifiedAt": "2026-11-27T15:17:00.000Z", "publisherTitle": "【EN Dub】Mobile Suit Gundam SEED DESTINY - Episode3" },
+        { "number": 4, "title": "Episode 4", "videoId": "WFbpz03CuaI", "language": "dub", "durationSeconds": null, "verifiedAt": "2026-11-27T15:17:00.000Z", "publisherTitle": "【EN Dub】Mobile Suit Gundam SEED DESTINY - Episode4" },
+        { "number": 5, "title": "Episode 5", "videoId": "Fr1h6ntPIrE", "language": "dub", "durationSeconds": null, "verifiedAt": "2026-11-27T15:17:00.000Z", "publisherTitle": "【EN Dub】Mobile Suit Gundam SEED DESTINY - Episode5" },
+        { "number": 6, "title": "Episode 6", "videoId": "lIbD1StF5Nw", "language": "dub", "durationSeconds": null, "verifiedAt": "2026-11-27T15:17:00.000Z", "publisherTitle": "【EN Dub】Mobile Suit Gundam SEED DESTINY - Episode6" },
+        { "number": 7, "title": "Episode 7", "videoId": "6o9JddAT5Rw", "language": "dub", "durationSeconds": null, "verifiedAt": "2026-11-27T15:17:00.000Z", "publisherTitle": "【EN Dub】Mobile Suit Gundam SEED DESTINY - Episode7" },
+        { "number": 8, "title": "Episode 8", "videoId": "aEbuf904Cpw", "language": "dub", "durationSeconds": null, "verifiedAt": "2026-11-27T15:17:00.000Z", "publisherTitle": "【EN Dub】Mobile Suit Gundam SEED DESTINY - Episode8" },
+        { "number": 9, "title": "Episode 9", "videoId": "bIAFK7OLOs8", "language": "dub", "durationSeconds": null, "verifiedAt": "2026-11-27T15:17:00.000Z", "publisherTitle": "【EN Dub】Mobile Suit Gundam SEED DESTINY - Episode9" },
+        { "number": 10, "title": "Episode 10", "videoId": "uMby8m_cGyM", "language": "dub", "durationSeconds": null, "verifiedAt": "2026-11-27T15:17:00.000Z", "publisherTitle": "【EN Dub】Mobile Suit Gundam SEED DESTINY - Episode10" },
+        { "number": 11, "title": "Episode 11", "videoId": "V0Xit1Tm5pg", "language": "dub", "durationSeconds": null, "verifiedAt": "2026-11-27T15:17:00.000Z", "publisherTitle": "【EN Dub】Mobile Suit Gundam SEED DESTINY - Episode11" },
+        { "number": 12, "title": "Episode 12", "videoId": "ggi5kGAArBY", "language": "dub", "durationSeconds": null, "verifiedAt": "2026-11-27T15:17:00.000Z", "publisherTitle": "【EN Dub】Mobile Suit Gundam SEED DESTINY - Episode12" },
+        { "number": 13, "title": "Episode 13", "videoId": "WPlCEjLwlys", "language": "dub", "durationSeconds": null, "verifiedAt": "2026-11-27T15:17:00.000Z", "publisherTitle": "【EN Dub】Mobile Suit Gundam SEED DESTINY - Episode13" },
+        { "number": 14, "title": "Episode 14", "videoId": "3ROP90gxyA4", "language": "dub", "durationSeconds": null, "verifiedAt": "2026-11-27T15:17:00.000Z", "publisherTitle": "【EN Dub】Mobile Suit Gundam SEED DESTINY - Episode14" },
+        { "number": 15, "title": "Episode 15", "videoId": "gGr3JAPC2Zs", "language": "dub", "durationSeconds": null, "verifiedAt": "2026-11-27T15:17:00.000Z", "publisherTitle": "【EN Dub】Mobile Suit Gundam SEED DESTINY - Episode15" }
+      ]
+    }
+  ]
+}

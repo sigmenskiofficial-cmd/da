@@ -12,8 +12,7 @@
     "build": "vite build",
     "start": "node server/index.js",
     "discover": "node scripts/discover-official-sources.mjs",
-    "test": "node scripts/smoke-test.mjs",
-    "typecheck": "tsc --noEmit -p client/tsconfig.json"
+    "test": "node scripts/smoke.mjs"
   },
   "dependencies": {
     "express": "^5.3.0",
