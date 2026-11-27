@@ -164,10 +164,17 @@ export async function diagnostics() {
   const store = db();
   const summary = catalogSummary();
   const health = await providerHealth();
-  const metadata = await metadataHealth();
+  const metadata = metadataHealth();
 
-  const verified = store.verifications.filter((item) => item.ok).length;
-  const failed = store.verifications.filter((item) => !item.ok);
+  // Store keys are named `progress`/`watchlist`/... — read them defensively so an older
+  // state document can never crash the diagnostics dashboard again.
+  const progress = Array.isArray(store.progress) ? store.progress : [];
+  const watchlist = Array.isArray(store.watchlist) ? store.watchlist : [];
+  const users = Array.isArray(store.users) ? store.users : [];
+  const verifications = Array.isArray(store.verifications) ? store.verifications : [];
+
+  const verified = verifications.filter((item) => item.ok).length;
+  const failed = verifications.filter((item) => !item.ok);
   const lastSync = summary.generatedAt ?? null;
 
   return {
@@ -177,15 +184,15 @@ export async function diagnostics() {
     metadata,
     database: {
       driver: 'json-document',
-      users: store.users.length,
-      progressRecords: store.watchProgress.length,
-      watchlistRecords: store.watchlist.length,
-      verificationRecords: store.verifications.length,
+      users: users.length,
+      progressRecords: progress.length,
+      watchlistRecords: watchlist.length,
+      verificationRecords: verifications.length,
     },
     verification: {
       verifiedEpisodes: verified,
       failedSources: failed.length,
-      lastVerifiedAt: store.verifications.map((item) => item.checkedAt).sort().at(-1) ?? null,
+      lastVerifiedAt: verifications.map((item) => item.checkedAt).sort().at(-1) ?? null,
       lastError: failed.sort((a, b) => String(b.checkedAt).localeCompare(String(a.checkedAt)))[0] ?? null,
     },
     lastSynchronization: lastSync,
