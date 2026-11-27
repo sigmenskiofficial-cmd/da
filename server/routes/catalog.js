@@ -11,6 +11,15 @@ import { rateLimit } from '../lib/rateLimit.js';
 export const catalogRouter = express.Router();
 
 const readLimit = rateLimit({ windowMs: 60_000, max: 240, keyPrefix: 'catalog' });
+
+// metadataHealth() is synchronous; calling .catch on it threw and broke /api/meta.
+function readMetadataHealth() {
+  try {
+    return metadataHealth();
+  } catch {
+    return { state: 'unknown' };
+  }
+}
 const writeLimit = rateLimit({ windowMs: 60_000, max: 40, keyPrefix: 'playback-write' });
 
 catalogRouter.get('/health', (_req, res) => {
@@ -28,7 +37,7 @@ catalogRouter.get('/meta', readLimit, async (_req, res, next) => {
       genres,
       currentSeason: currentSeason(),
       years: Array.from({ length: 66 }, (_, i) => new Date().getUTCFullYear() + 1 - i),
-      metadata: await metadataHealth().catch(() => ({ state: 'unknown' })),
+      metadata: readMetadataHealth(),
     });
   } catch (err) {
     next(err);
